@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMap | Canvas</title>
+    <script src="/index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="menu" hidden>
+        <h1>Properties</h1>
+        <label for="node-text-input">Text</label>
+        <input type="text" name="text" placeholder="Mind Map" id="node-text-input" autocomplete="off">
+        <!-- <button id="add-parent-node">Add Sub Node</button> -->
+        <button id="add-sub-node">Add Sub Node</button>
+        <button id="delete-node">Delete Node</button>
+    </div>
+    <div id="open-project">
+        <h3 class="heading"> MIND MAP </h3>
+        <button class="buttonFile" id="save-file">Save File</button>
+        <button class="buttonFile" id="open-file">Open File</button>
+        <button class="buttonFile" id="new-file">New File</button>
+        <button class="buttonFile" id="export-png">Export as PNG</button>
+        <button class="buttonFile" id="expandAll">Exapand All</button>
+        <button class="buttonFile" id="collapseAll">Collapse</button>
+    </div>
+    <!-- <div class="nodeDetails">
+        <table>
+            <thead>
+                <tr>
+                    <th>type</th>
+                    <th>text</th>
+                    <th>uuid</th>
+                    <th>Parent Node</th>
+                    <th>Sub Node</th>
+                </tr>
+            </thead>
+            <tbody id="tablebody" ></tbody>
+        </table>
+    </div> -->
+</body>
+
+</html>
